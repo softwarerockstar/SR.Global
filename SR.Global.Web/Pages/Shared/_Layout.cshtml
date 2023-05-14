@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SR.Global</title>    
+    <link rel="stylesheet" href="~/css/main.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />    
+</head>
+<body>
+    <div id="covid-alert" class="covid">
+        <div style="max-width:1200px;margin:0 auto;">
+            <div style="display:flex;align-items:center;justify-content:center;">
+                <div>
+                    <div style="font-weight:bold;display:flex;align-items:center;">
+                        FirstStudent and First Risk Advisors, Inc. are now UnitedHealthcare Companies
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header d-flex justify-content-between">
+                <div class="logo"> <a href="/"><span class="sr-only">PGH Global Partnering in Good Health Homepage </span></a> </div> <div class="phone-header">
+                    Call: <a id="template-tel" href="tel:1-267-406-4190"><span aria-label="1 2 6 7 4 0 6 4 1 9 0">1-267-406-4190</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="first-read-wrapper">
+            <div class="container pushed-left">
+                <div class="first-read-content">
+                    <div class="row" data-sf-element="Row">
+                        <div id="FirstReadContent_C005_Col00" class="sf_colsIn col-lg-7" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                            <div>
+                                <div>
+                                    <h1>
+                                        <span></span>Learn How to Meet
+                                        <br class="d-none d-md-block">Your Students Insurance Needs
+                                    </h1><h2>
+                                        A Guide to Selecting
+                                        <br class="d-none d-md-block">International Student
+                                        <br class="d-none d-md-block">Health Insurance
+                                    </h2><p>
+                                        Education agents, Agency Managers, Institutions and Educational Organizations do everything they can to create a positive, rewarding study abroad experience for their students. Helping students find the right insurance coverage is a new way for you to
+                                        add value to your clients’ experience, earn revenue, and differentiate yourself from your competitors. Download this free guide today to learn the most important factors to consider when providing guidance to students as they choose insurance
+                                        plans and providers so you can protect your students when it&nbsp;really&nbsp;counts.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="FirstReadContent_C005_Col01" class="sf_colsIn col-lg-5" data-sf-element="Column 2" data-placeholder-label="Column 2">                            
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="main-content">
+            <div class="container pushed-left">
+                <div class="row" data-sf-element="Row">
+                    <div id="MainContent_C002_Col00" class="sf_colsIn col-lg-auto image-column" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                        <div>
+                            <div><img src="~/images/guide.jpg" alt="" title="guide" data-displaymode="Original"></div>
+                        </div>
+                    </div>
+                    <div id="MainContent_C002_Col01" class="sf_colsIn col col-sm-8" data-sf-element="Column 2" data-placeholder-label="Column 2">
+                        <div>
+                            <div>
+                                <p>
+                                    Choosing an insurance provider for your international student health plans, or switching to a new one, can be a daunting process. Use this guide (and checklist!) to aid in your research process as you seek insurance coverage that’s aligned with
+                                    your institution’s needs, values and&nbsp;financial&nbsp;health.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div><h4 class="mt-5 mb-4 h2"><strong>Inside this guide you’ll get the information you need to:&nbsp;</strong></h4><ul><li>Meet any insurance requirements your students’ universities&nbsp;have</li><li>Compare the international student insurance options&nbsp;available</li><li>Discover the customized add-ons you should be asking&nbsp;about</li><li>Find out what you should expect from a good provider&nbsp;network</li></ul><p>…Plus, you’ll get a free checklist to use during your vetting and research&nbsp;process</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="main-footer">
+            <div class="container pushed-left">
+                <div class="main-footer-content">
+
+                    <div>
+                        <div>
+                            <div class="main-footer-links">
+                                <a target="_blank" href="https://www.uhcsr.com/privacy-policies">Privacy Policy</a>
+                                <a href="https://www.uhc.com/content/dam/uhcdotcom/en/npp/TOU-UHC-StudentResources-EN.pdf" target="_blank">Terms of Use</a>
+                                <a href="https://www.uhcsr.com/contact-us" target="_blank">Contact Us</a>
+                            </div>
+                            <div class="main-footer-logo"><img src="~/images/nafsa2.png" alt="NASFA Global Associate logo" title="nafsa" data-displaymode="Original"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="page-footer">
+        <div id="footerFullLogoWrapper" class="sitePageWidth">
+            <img class="footerLogo" src="https://www.uhcsr.com/img/logoMobileFooterUHC.svg" tabindex="-1" aria-hidden="true" alt="">
+            <div id="footerBottomRightWrapper" class="footerAlignRight">
+                <div>
+                    <p class="uhcWhite">© United HealthCare Services, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- PGH Theme -->
+    <!-- <script src="/themes/agents/js/pgh-agents.min.js" type="text/javascript"></script> -->
+    <script src="~/js/pgh-agents.min.js" type="text/javascript"  asp-append-version="true"></script>
+
+    <script src="~/js/text-field.js" type="text/javascript"></script>
+    <script src="~/js/email-text-field.js" type="text/javascript"></script>
+    <script src="~/js/form.all.min.js" type="text/javascript"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div data-sf-role="form-container" class="form-container">
+    <form asp-controller="Demo" asp-action="Register" method="post" name="my-form" id="my-form" role="form">
+        <div id="C006_Col00" class="sf_colsIn form-group-wrapper" data-sf-element="Container" data-placeholder-label="Form Container">
+
+            <div>
+                <div><h3 class="form-title">Get The Free Guide Now</h3></div>
+            </div>
+
+            <!-- InputCssClass class variable -->
+            <div class="form-group" data-sf-role="text-field-container">
+                <input data-sf-role="violation-restrictions" type="hidden" value='{"maxLength":"255", "minLength": "0"}' />
+                <input data-sf-role="violation-messages" type="hidden" value='{"maxLength":"First Name field must be less than 255 characters", "required": "First Name field input is required", "invalid": "Entry is not valid!", "regularExpression": "First Name field input is invalid"}' />
+
+                <label class="h6" for='Textbox-1'>First Name</label>
+                <input id='Textbox-1'
+                       type="text"
+                       class="form-control"
+                       name="first_name"
+                       placeholder="First Name*"
+                       value=""
+                       aria-required="true"
+                       data-sf-role="text-field-input"
+                       required="required" pattern=".{0,255}"
+                       aria-describedby='TextboxErrorMessage-1' />
+
+                <div id='TextboxErrorMessage-1' data-sf-role="error-message" role="alert" aria-live="assertive" aria-atomic="true" class="text-danger"></div>
+            </div>
+            <!-- InputCssClass class variable -->
+            <div class="form-group" data-sf-role="text-field-container">
+                <input data-sf-role="violation-restrictions" type="hidden" value='{"maxLength":"255", "minLength": "0"}' />
+                <input data-sf-role="violation-messages" type="hidden" value='{"maxLength":"Last Name field must be less than 255 characters", "required": "Last Name field input is required", "invalid": "Entry is not valid!", "regularExpression": "Last Name field input is invalid"}' />
+
+                <label class="h6" for='Textbox-2'>Last Name</label>
+                <input id='Textbox-2'
+                       type="text"
+                       class="form-control"
+                       name="last_name"
+                       placeholder="Last Name*"
+                       value=""
+                       aria-required="true"
+                       data-sf-role="text-field-input"
+                       required="required" pattern=".{0,255}"
+                       aria-describedby='TextboxErrorMessage-2' />
+
+                <div id='TextboxErrorMessage-2' data-sf-role="error-message" role="alert" aria-live="assertive" aria-atomic="true" class="text-danger"></div>
+            </div>
+
+            <div class="form-group" data-sf-role="email-text-field-container">
+                <input data-sf-role="violation-restrictions" type="hidden" value='{"maxLength":"255", "minLength": "0"}' />
+                <input data-sf-role="violation-messages" type="hidden" value='{"maxLength":"Email Address field must be less than 255 characters", "required": "Email address is required", "invalid": "Entry is not valid!", "regularExpression": "Email address is invalid"}' />
+
+                <label class="h6" for='Email-1'>Email Address</label>
+                <input id='Email-1'
+                       data-sf-role="email-text-field-input"
+                       type="email"
+                       class="form-control"
+                       name="email"
+                       placeholder="Email Address*"
+                       value=""
+                       aria-required="true"
+                       required="required" pattern="^[a-zA-Z0-9.!#$%&'*\+\-/=?^_`{|}~]+@@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,63}$"
+                       aria-describedby='EmailErrorMessage-1' />
+
+
+                <div id='EmailErrorMessage-1' data-sf-role="error-message" role="alert" aria-live="assertive" class="text-danger"></div>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="sf-SubmitButton btn btn-primary">Download</button>
+            </div>
+
+
+        </div>
+    </form>
+</div>
